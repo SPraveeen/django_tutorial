@@ -2,6 +2,11 @@
 {% block content %}
 
 <h1>Products Adding Page</h1>
+
+<a href="/inventory/products/">
+    <button>Back</button><br>
+</a><br>
+
 <form action="" method="POST">
     {% csrf_token %}
     {{product_form}}

@@ -1,7 +1,12 @@
 {% extends 'base.html'%}
 {% block content %}
 
-<h1>Customers Page</h1>
+<h1>Customer List Page</h1>
+
+<a href="/orders/add/customers/">
+    <button>Add Customer</button><br>
+</a><br>
+
 <table>
     <thead>
         <tr>
@@ -27,6 +32,7 @@
                 </a>
             </td>
         </tr>
+        {%endfor%}
     </tbody>
 </table>
 
