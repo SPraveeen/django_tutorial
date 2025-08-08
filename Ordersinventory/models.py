@@ -8,3 +8,6 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.customer_name
+    
+class Orders(models.Model):
+    customer_reference=models.ForeignKey(Customer,on_delete=models.CASCADE)
