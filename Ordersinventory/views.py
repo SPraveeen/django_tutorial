@@ -54,3 +54,11 @@ def OrdersAdd(request):
         new_order.save()
 
     return render(request,'orders_add.html',context)
+
+def OrdersList(request):
+
+    context={
+        'all_orders':Orders.objects.all()
+    }
+
+    return render(request,'orders.html',context)

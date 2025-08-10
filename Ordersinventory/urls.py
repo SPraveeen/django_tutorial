@@ -7,5 +7,6 @@ urlpatterns = [
     path('Update/customer/<int:id>/',CustomerUpdate,name='customer_update'),
     path('Delete/customer/<int:id>/',CustomerDelete,name='customer_delete'),
     path('add/orders/',OrdersAdd),
+    path('orders/',OrdersList),
 ]
 
